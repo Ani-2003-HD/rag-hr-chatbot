@@ -2,6 +2,11 @@
 
 A sophisticated HR Policy Question-Answering system built with Retrieval-Augmented Generation (RAG) technology. This chatbot can answer questions about HR policies by intelligently retrieving relevant information from policy documents and generating accurate responses using Google's Gemini LLM.
 
+## 📍 Repository Information
+
+- **GitHub Repository**: [https://github.com/Ani-2003-HD/rag-hr-chatbot](https://github.com/Ani-2003-HD/rag-hr-chatbot)
+- **Docker Hub**: [aniurddhahd/rag-hr-chatbot](https://hub.docker.com/r/aniurddhahd/rag-hr-chatbot)
+
 ## 🚀 Features
 
 - **Document Processing**: Extracts and processes text from HR policy PDFs
@@ -241,20 +246,28 @@ print(f"Confidence: {result['confidence']}")
 
 1. **Build the image**
    ```bash
-   docker build -t your-username/rag-hr-chatbot .
+   docker build -t aniurddhahd/rag-hr-chatbot .
    ```
 
 2. **Push to Docker Hub**
    ```bash
-   docker push your-username/rag-hr-chatbot
+   docker push aniurddhahd/rag-hr-chatbot
    ```
 
 3. **Run from Docker Hub**
    ```bash
    docker run -p 8000:8000 -p 8501:8501 \
      -e GEMINI_API_KEY=your_api_key \
-     your-username/rag-hr-chatbot
+     aniurddhahd/rag-hr-chatbot
    ```
+
+### Available Docker Images
+
+The following Docker images are available on Docker Hub:
+
+- **Backend**: `aniurddhahd/rag-hr-chatbot-backend:latest`
+- **Frontend**: `aniurddhahd/rag-hr-chatbot-frontend:latest`
+- **Complete Application**: `aniurddhahd/rag-hr-chatbot:latest`
 
 ### Production Considerations
 
